@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background:url("../bg.jpg");
+    height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#scoreBox{
+    position:absolute;
+    top: 7px;
+    right: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+}
+#highestscoreBox{
+    position:absolute;
+    bottom: 9px;
+    left: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+
+}
+#board{
+    background-image: url("../boardbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 30vw 70vh;
+    width: 30vw;
+    height: 70vh;
+    border: 2px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    
+}
+.head{
+    background:linear-gradient(rgb(108, 0, 151), blue);
+    border: .25vmin solid white;
+    transform: scale(1.02);
+    border-radius: 8px;
+
+
+}
+.snake{
+    background-color: rgb(3, 69, 192);
+    border: .25vmin solid white;
+    border-radius: 8px;
+}
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 14px;
+}
